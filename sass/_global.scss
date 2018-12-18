@@ -1,0 +1,18 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+.container {
+  width: 1140px;
+} /*не задается с этого места, пришлось указывать это свойство в first-section*/
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  outline: none; /* Убираем границу вокруг ссылок  */
+}
+

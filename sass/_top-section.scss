@@ -1,0 +1,45 @@
+.top-section-wrap {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 140px;
+  z-index: 999; /*Чем больше z-index, тем выше располагается блок.*/
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(44, 62, 80, 0.56)));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(44, 62, 80, 0.56) 100%);
+  max-width: 1600px;
+  top: 0;
+}
+.top-section {
+  display: flex;
+  position: fixed;
+  padding: 0 10px;
+  left: 0;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1140px;
+  height: 105px;
+}
+.top-section-logo {
+  display: block;
+padding-top: 20px;
+}
+ .menu-list {
+  display: block;
+}
+.menu-item {
+  display: inline-block;
+  margin: 35px;
+}
+.menu-item a {
+  color: #fff;
+}
