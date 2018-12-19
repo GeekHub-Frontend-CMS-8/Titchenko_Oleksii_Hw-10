@@ -1,15 +1,14 @@
 
- .services-wrap {
+.about-wrap {
   padding-bottom: 100px;
   display: flex;
   flex-flow: column;
-  background: url("../img/second-section-services/services__background-image.png") top no-repeat;
-  background-color: #b24a50;
+  background: url("../img/about/about_bg.jpg") top no-repeat;
   background-size: auto;
   background-attachment: fixed;
   width: 100%;
 }
-.services__title {
+.about__title {
   &__wrap {
     padding: 0px 10px;
     max-width: 1070px;
@@ -23,35 +22,33 @@
     font-weight: 300;
     text-transform: uppercase;
   }
-  &__paragraph_1 {
-    padding: 20px 0;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    .services__title__paragraph_1_opacity {
-      color: #d0767b;
-    }
-  }
   &__paragraph_2 {
     color: #fff;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+    padding-bottom: 60px;
+  }
+  &__button {
+    background-color: #b4ae56;
+    border-radius: 5px;
+    padding: 16px;
+    width: 275px;
+    color: #ffd9cc;
+    border: 0;
   }
 }
-.services-list-wrap {
-    margin: 0 auto;
-    padding: 0 10px;
-    display: flex;
-    width: 100%;
-    max-width: 1140px;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    list-style: none;
-  }
-
-.services-list-block {
+.about-list-wrap {
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  width: 100%;
+  max-width: 1140px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+.about-list-block {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,44 +57,30 @@
   border-radius: 5px;
   max-width: 23%;
   flex-basis: 100%; /*в процентах вдоль главной оси. При этом размер вычисляется относительно родителя.*/
-  background-color: #c45158;
+  background-color: #554553;
   opacity: 0.7;
   margin: 10px;
 
-  &_outer_icon {
-    width: 130px;
-    height: 130px;
-    border-radius: 100%;
-    border: 5px solid #fff;
+  &_image_avatar {
   }
-  &_iner_icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 100%;
-    border: 5px solid #c45158;
-  }
-  &_icon {
-    font-size: 70px;
-    color: #c45158;
-  }
-    &_headline {
+  &_headline {
+    font-family: 'Lato', sans-serif;
     color: #fff;
-    font-size: 22px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 700;
     text-transform: uppercase;
     padding: 35px 0 50px;
   }
-  &_paragraph {
-    color: #fefefe;
+  &_position {
+    color: #a1ca6c;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
   }
+.fa {
+  color: #fff;
+}
+
 }
 @media only screen and (min-width: 576px) {
   .services-list-block_headline {
