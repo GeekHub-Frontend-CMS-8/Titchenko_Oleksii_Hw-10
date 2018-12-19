@@ -240,12 +240,65 @@ a {
     color: #a1ca6c;
     font-size: 14px;
     font-weight: 400;
-    line-height: 20px; }
+    line-height: 20px;
+    padding-bottom: 30px; }
+  .about-list-block-social-wrap {
+    width: 200px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center; }
+    .about-list-block-social-wrap ul li {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      margin: 10px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 50%;
+      border: 3px solid #D8E2DC;
+      float: left;
+      transition: all 0.5s ease; }
+    .about-list-block-social-wrap ul li .fa {
+      color: #D8E2DC;
+      /*margin-top: 20px;*/
+      transition: all 0.5s ease; }
+    .about-list-block-social-wrap ul li:hover.facebook {
+      border: 5px solid #3b5998;
+      box-shadow: 0 0 15px #3b5998;
+      transition: all 0.5s ease; }
+    .about-list-block-social-wrap ul li:hover .fa-facebook {
+      color: #3b5998;
+      text-shadow: 0 0 15px #3b5998;
+      transition: all 0.5s ease; }
+    .about-list-block-social-wrap ul li:hover.twitter {
+      border: 5px solid #00aced;
+      box-shadow: 0 0 15px #00aced;
+      transition: all 0.5s ease; }
+    .about-list-block-social-wrap ul li:hover .fa-twitter {
+      color: #00aced;
+      text-shadow: 0 0 15px #00aced;
+      transition: all 0.5s ease; }
+    .about-list-block-social-wrap ul li:hover.google {
+      border: 5px solid #00aced;
+      box-shadow: 0 0 15px #00aced;
+      transition: all 0.5s ease; }
+    .about-list-block-social-wrap ul li:hover .fa-google {
+      color: #00aced;
+      text-shadow: 0 0 15px #00aced;
+      transition: all 0.5s ease; }
+    .about-list-block-social-wrap ul li:hover.linkedin {
+      border: 5px solid #00aced;
+      box-shadow: 0 0 15px #00aced;
+      transition: all 0.5s ease; }
+    .about-list-block-social-wrap ul li:hover .fa-linkedin {
+      color: #00aced;
+      text-shadow: 0 0 15px #00aced;
+      transition: all 0.5s ease; }
   .about-list-block .fa {
     color: #fff; }
 
 @media only screen and (min-width: 576px) {
-  .services-list-block_headline {
+  .about-list-block_headline {
     font-size: 24px; }
   .services-list-block {
     flex-basis: 48%;
