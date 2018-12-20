@@ -4,24 +4,23 @@
   flex-flow: column;
   background: url("../img/work/work__background__image.png") top no-repeat;
   background-color: #81a256;
-
   background-attachment: fixed;
   width: 100vw;
-  height: 100vh;
+  height: auto;
 }
 .work__title {
   &__wrap {
     padding: 0px 10px;
-    max-width: 1070px;
+    max-width: 1000px;
     text-align: center;
     margin: 20vh auto 60px; /*20vh Эквивалентно 20% высоты окна браузера.*/
   }
   &__headline {
-    padding: 30px 0;
     color: #fff;
-    font-size: 40px;
+    font-size: 44px;
     font-weight: 300;
     text-transform: uppercase;
+    padding: 35px;
   }
   &__paragraph_2 {
     color: #fff;
@@ -35,7 +34,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1140px;
+  max-width: 1100px;
   margin: auto;
   border-bottom:  1px solid #94b963;
   border-top: 1px solid #94b963;
@@ -58,4 +57,82 @@
   a {
     color: #fff;
   }
+  .portfolio-menu-item:hover {
+    background-color: #f5c149;
+    height: auto;
+  }
+}
+/*PORFOLIO Gallery*/
+.porfolio-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  max-width: 1100px;
+  overflow: hidden; /*overflow управляет отображением содержания блочного элемента,
+    если оно целиком не помещается и выходит за область заданных размеров.
+              hidden Отображается только область внутри элемента, остальное будет скрыто.*/
+
+  .portfolio-item {
+    position: relative;
+    margin: 10px 0;
+  }
+    .portfolio-item figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .portfolio-item figure figcaption {
+      background-color: #eeeeee;
+      color: #727272;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 58px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .hover-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 78%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      background-color: #3d4d29;
+      background-image: url("../img/work/hover_work.png");
+      transition: 0.3s;
+    }
+    .hover-img:hover {
+      opacity: 0.7;
+    }
+    .hover-img a {
+      margin: 5px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 48px;
+      color: #fff;
+      text-decoration: none;
+    }
+    .full {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      padding: 8%;
+      background-image: url("../img/work/Portfolio_photo1.jpg");
+      background-size: contain;
+      background-origin: content-box;
+    }
+
+    a:focus + .full {
+      display: block;
+}
 }
