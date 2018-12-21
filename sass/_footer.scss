@@ -1,0 +1,26 @@
+.footer-social-container {
+  display: flex;
+  flex-direction: row;
+  background-color:#68a097;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+.footer-item {
+  display: inline-block;
+  margin: 20px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background: #82c8bd;
+  line-height: 60px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.footer-item:hover {
+  background: #00aced;
+}
+

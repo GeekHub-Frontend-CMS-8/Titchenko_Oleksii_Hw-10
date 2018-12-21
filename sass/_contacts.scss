@@ -3,17 +3,17 @@
   display: flex;
   flex-flow: column;
   background: url("../img/contacts/contacts_bg.jpg") top no-repeat;
-  background-color: #81a256;
+  background-color: #78b8ae;
   background-attachment: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 .contact__title {
   &__wrap {
-    padding: 0px 10px;
-    max-width: 1000px;
+    padding: 25px;
+    max-width: 1100px;
     text-align: center;
-    margin: 20vh auto 60px; /*20vh Эквивалентно 20% высоты окна браузера.*/
+   margin: 20vh auto 60px; /*20vh Эквивалентно 20% высоты окна браузера.*/
   }
   &__headline {
     color: #fff;
@@ -29,4 +29,6 @@
     line-height: 24px;
     padding-bottom: 60px;
   }
+
+
 }
