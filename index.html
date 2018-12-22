@@ -43,6 +43,7 @@
                 </ul>
         </div>
  </section>
+ <!-- пробую по этому видеоуроку сделать с jqwery https://www.youtube.com/watch?v=UwiR2lasSlo
  <div class="slider-wrap">
      <div class="slides-container">
          <div class="slide">
@@ -53,6 +54,7 @@
          </div>
      </div>
  </div>
+ -->
  <!--
 <div class="home-slider-section">
     <div class="home-slider-section__slide_1">
@@ -70,5 +72,28 @@
 
            </div>
 -->
+
+        <div class="full-widch">
+            <div class="carousel carousel-slider">
+                <a href="#one!" class="carousel-item"><img src="img/home/home_bg.jpg"></a>
+                <a href="#two!" class="carousel-item"><img src="img/home/home_bg1.jpg"></a>
+                <a href="#three!" class="carousel-item"><img src="img/home/home_bg2.jpg"></a>
+
+            </div>
+        </div>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+    $ ( document ) .ready(function () {
+        $ (".button-collapse").sideNav ();
+        $ (".carusel.carusel-slider").caruesel ({
+            fullWidch:true,
+            indicators:true,
+        })
+    })
+</script>
 </body>
 </html>

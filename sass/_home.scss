@@ -1,4 +1,4 @@
-.home-slider-section {
+/*.home-slider-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,18 +33,24 @@
   text-transform: uppercase;
 }
 .slider-wrap{ /* Оболочка слайдера и кнопок */
+
+/*
   display: flex;
   max-width: 1170px;
   height: 100vh;
   margin: 0 auto;
 }
 .slides-container { /* Оболочка слайдера */
-  width: 100%;
+
+/*  width: 100%;
   height: 100vh;
   overflow: hidden;
   position:relative;
 }
-.slide{ /* Слайд */
+
+*//*
+.slide{ /* Слайд
   width:100%;
   height:100%;
 }
+*/
